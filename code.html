@@ -28,7 +28,7 @@
     <!-- === Nav Section ===-->
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand obliqua" href="#"><img src="img/favicon-32x32.png" class="d-inling-block align-text-top" alt="Dennis Nickell Logo" width="30" height="30"> BAKTRAK</a>
+        <a class="navbar-brand obliqua" href="#"><img src="img/favicon-32x32.png" class="d-inline-block align-text-top " alt="Dennis Nickell Logo" width="30" height="30"> BAKTRAK</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,7 +103,9 @@ function displayString(revString){
                     <p><strong>getValue</strong> is a function that gets the vaule input from the user. In this function, the variable (revString) is passed to (userString).</p><br>
                     <p>displayString is used is used to print (revString) in the final output. The class invisible was used to keep the alert box invisible until the <strong>displayString</strong> function runs in the end and the classList removes the invisible attribute.</p><br>
                     <h5><strong>reverseString</strong></h5>
-                    <p>In the function <strong>reverseString</strong> an empty array is declared to give access to array functions. A for loop that runs backwards is used to reverse the string</p>
+                    <p>In the function <strong>reverseString</strong> an empty array is declared to give access to array functions. A for loop that runs backwards is used to reverse the string. The loop begins at the end and counts backwards until the index is equal to zero. revString adds to itself on every iteration, using the index running backwards. This allows the last character to be added first, this continues each time through the loop until zero is reached.</p><br>
+                    <h5><strong>displayString</strong></h5>
+                    <p><strong>displayString</strong> uses a temperate litteral to display the alert message with the reverse string. The classList of invisible is removed to make the results visible to the user.</p>
                 </div>
             </div>
     </div>
