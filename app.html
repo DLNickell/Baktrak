@@ -68,7 +68,7 @@
                            <input id="userString" type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String">
                        </div>
                        <div class="col-12">
-                           <button type="button" id="btnsubmit" class="btn btn-danger">Reverse Me</button>
+                           <button type="button" id="btnSubmit" class="btn btn-danger">Reverse Me</button>
                            <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert">
                                <h4 class="alert-heading">Well Done!</h4>
                                <hr>
@@ -109,6 +109,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click" ,getValue);
+    </script>
 </body>
 
 </html>

@@ -61,17 +61,49 @@
             <div class="row row-cols-1 row-cols-lg-2 pt-5">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
-                        //Call Hello World
-                        function helloWorld() {
-                            alert("hello world");
-                        } 
+                        //Get the string from the page
+//Controller function
+function getValue(){
+    document.getElementById("alert").classList.add("invisible");
+    let userString = document.getElementById("userString").value;
+    let revString = reverseString(userString);
+    displayString(revString);}
+
+//Reverse the string
+//Logic function
+function reverseString(userString){
+    let revString = [];
+
+        //Reverse a string using a for loop
+    for (let index = userString.length - 1; index >= 0; index--) {
+        revString += userString[index];        
+    }
+    return revString;
+
+}
+
+//Display the reversed string to the user
+//View function
+function displayString(revString){
+
+    //Write to the page
+    document.getElementById("msg").innerHTML = `Your string reversed is: ${revString}`;
+
+    //Show the alert box
+    document.getElementById("alert").classList.remove("invisible");
+
+}
                     </code>
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The code is structured in one function</p>
-                    <h5>Hello World</h5>
-                    <p>Hello world is a function that displays an alert with a message of hello world</p>
+                    <h5 class="border-1 border-bottom border-danger"><strong> The code is structured in three functions</strong></h5>
+                    <br>
+                    <h5><strong> getValue</strong></h5>
+                    <p><strong>getValue</strong> is a function that gets the vaule input from the user. In this function, the variable (revString) is passed to (userString).</p><br>
+                    <p>displayString is used is used to print (revString) in the final output. The class invisible was used to keep the alert box invisible until the <strong>displayString</strong> function runs in the end and the classList removes the invisible attribute.</p><br>
+                    <h5><strong>reverseString</strong></h5>
+                    <p>In the function <strong>reverseString</strong> an empty array is declared to give access to array functions. A for loop that runs backwards is used to reverse the string</p>
                 </div>
             </div>
     </div>
