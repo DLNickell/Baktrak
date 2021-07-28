@@ -9,8 +9,11 @@
  .body {
      color: #272525;
  }
+
  
- .obliqua {     
+ 
+ .obliqua {  
+    
 font-family: obliqua, sans-serif;
 font-weight: 700;
 font-style: italic;
@@ -65,7 +68,7 @@ code[class*="language-"],
  } 
 
  .css3icon {
-     color: rgb(11,82,214;
+    color:rgb(17, 98, 228);
  }
 
  
